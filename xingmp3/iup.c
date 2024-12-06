@@ -138,7 +138,7 @@ static int bat_bit_master[] =
 void i_sbt_mono(SAMPLEINT * sample, short *pcm, int n);
 void i_sbt_dual(SAMPLEINT * sample, short *pcm, int n);
 
-static void unpack(void *m);
+static void unpack(MPEGI *m);
 
 /*------------- initialize bit getter -------------*/
 static void load_init(MPEGI *m, unsigned char *buf)
