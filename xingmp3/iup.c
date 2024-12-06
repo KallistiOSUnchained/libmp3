@@ -1,5 +1,5 @@
 /*____________________________________________________________________________
-	
+
 	FreeAmp - The Free MP3 Player
 
         MP3 Decoder originally Copyright (C) 1995-1997 Xing Technology
@@ -20,7 +20,7 @@
 	You should have received a copy of the GNU General Public License
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-	
+
 ____________________________________________________________________________*/
 
 /****  iup.c  ***************************************************
@@ -138,7 +138,7 @@ static int bat_bit_master[] =
 void i_sbt_mono(SAMPLEINT * sample, short *pcm, int n);
 void i_sbt_dual(SAMPLEINT * sample, short *pcm, int n);
 
-static void unpack();
+static void unpack(MPEGI *m);
 
 /*------------- initialize bit getter -------------*/
 static void load_init(MPEGI *m, unsigned char *buf)
