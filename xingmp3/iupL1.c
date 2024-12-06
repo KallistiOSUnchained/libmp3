@@ -1,5 +1,5 @@
 /*____________________________________________________________________________
-	
+
 	FreeAmp - The Free MP3 Player
 
         MP3 Decoder originally Copyright (C) 1995-1997 Xing Technology
@@ -20,7 +20,7 @@
 	You should have received a copy of the GNU General Public License
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-	
+
 ____________________________________________________________________________*/
 
 /****  iupL1.c  ***************************************************
@@ -241,7 +241,7 @@ int i_audio_decode_initL1(MPEGI *m, MPEG_HEAD * h, int framebytes_arg,
       m->iup.first_pass_L1 = 0;
    }
 
-   m->iup.unpack_routine = unpackL1;
+   m->iup.unpack_routine = (UNPACK_FUNCTION)unpackL1;
 
 
    transform_code = transform_code;	/* not used, asm compatability */
