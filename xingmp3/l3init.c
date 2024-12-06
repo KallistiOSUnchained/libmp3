@@ -1,5 +1,5 @@
 /*____________________________________________________________________________
-	
+
 	FreeAmp - The Free MP3 Player
 
         MP3 Decoder originally Copyright (C) 1995-1997 Xing Technology
@@ -20,7 +20,7 @@
 	You should have received a copy of the GNU General Public License
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
-	
+
 ____________________________________________________________________________*/
 
 /****  tinit.c  ***************************************************
@@ -137,7 +137,7 @@ int L3table_init(MPEG *m)
 }
 /*====================================================================*/
 typedef float ARRAY36[36];
-ARRAY36 *hwin_init_addr();
+ARRAY36 *hwin_init_addr(MPEG *m);
 
 /*--------------------------------------------------------------------*/
 void hwin_init(MPEG *m)
@@ -297,9 +297,9 @@ void msis_init(MPEG *m)
 
 
 /*-------
-for(i=0;i<21;i++) nBand[0][i] = 
+for(i=0;i<21;i++) nBand[0][i] =
             sfBandTable[sr_index].l[i+1] - sfBandTable[sr_index].l[i];
-for(i=0;i<12;i++) nBand[1][i] = 
+for(i=0;i<12;i++) nBand[1][i] =
             sfBandTable[sr_index].s[i+1] - sfBandTable[sr_index].s[i];
 -------------*/
 
